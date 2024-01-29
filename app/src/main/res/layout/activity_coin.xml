@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0476D1"
+    android:orientation="vertical"
+    tools:context=".CoinActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/CoinToolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="-1dp" >
+
+        <TextView
+            android:id="@+id/CoinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:text="Flip Coin Game"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ImageView
+        android:id="@+id/CoinImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="140dp"
+        app:srcCompat="@drawable/cross"
+        tools:srcCompat="@drawable/cross" />
+
+    <Button
+        android:id="@+id/FlipButton"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Flip"
+        android:textColor="#0B0B0B"
+        android:textSize="20sp" />
+
+
+</LinearLayout>
